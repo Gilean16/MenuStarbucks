@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 80px; /* Ajusta el valor según el tamaño del header */
+}
+
+
+nav img{
+    width: 10vw;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 10;
+    width: 100vw;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30vw;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+
+
+
+.container1 p {
+    font-family: "Roboto", sans-serif;
+    margin: 50px;
+    font-weight: 700; 
+    font-size: 28px;  
+    color: #0e4600;      
+    line-height: 0.5;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin: 20px 0; 
+    text-align: left;
+}
+
+.section-title hr {
+    width: 1050px;
+}
+
+.section-title h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: left;
+    margin-left: 20px;
+    color: #0e4600; 
+}
+
+/* Parte de los cafes*/
+
+.drink-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.drink-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.drink-item {
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.drink-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;   
+    background-color: #0c452a;
+    object-fit: cover;     
+    transition: box-shadow 0.3s ease;
+}
+
+.drink-item p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Efecto Hover: el círculo alrededor de la imagen */
+.drink-item img:hover {
+    box-shadow: 0 0 0 5px #00704a;  
+    cursor: pointer;
+    transform: scale(1.05);          
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .drink-item img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+/* Contenedor principal para las secciones */
+.info-container {
+    display: flex;
+    justify-content: left; 
+    align-items: flex-start; 
+    padding: 0; 
+    margin: 0;
+    margin-bottom: 20px;
+    gap: 0; 
+}
+
+.info-column {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 10px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+    text-align: left; 
+}
+
+
+.info-column li {
+    text-align: left; 
+}
+
+.info-column li p {
+    font-weight: bold; 
+    margin: 0;
+    color: #333;
+}
+
+.info-column a {
+    text-decoration: none; 
+    color: #00704a; 
+    transition: color 0.3s; 
+}
+
+.info-column a:hover {
+    color: #004d2c; 
+    text-decoration: underline; 
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #f4f4f4; /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seriff;
+    font-size: 14px;
+    color: #333;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); 
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #00704a; 
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #004d2c; 
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 20px; 
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #00704a; /* Creo que es un color verde similar al de Starbucks */
+}
+
+.btn-filled {
+    background-color: #ffffff;
+    border: none;
+    color: #00704a;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filled:hover {
+    background-color: #004d2c; 
+    color: #ffffff;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Agrega transición para filtro */
+    filter: grayscale(0); /* Inicialmente en escala de grises */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño */
+    filter: grayscale(100%); /* Remueve el efecto de escala de grises */
+}
+
+
+
+
+
